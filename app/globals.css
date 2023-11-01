@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .main {
+    @apply relative w-full z-0  flex-1 h-full px-4 overflow-y-auto no-scrollbar;
+  }
+
+  .no-scrollbar {
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* Internet Explorer/Edge */
+    scrollbar-color: transparent transparent; /* Firefox */
+  }
+
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+    width: 0;
+    height: 0;
+  }
+
+  .no-scrollbar::-webkit-scrollbar-thumb {
+    background: transparent;
+  }
+
+  .form-input-date {
+    @apply block h-10 w-full px-3 py-2  flex items-center justify-start text-left text-slate-50 text-sm bg-slate-800 border border-slate-700 rounded-md !important;
+  }
+
+  .form-btn {
+    @apply w-full bg-blue-600 my-11 text-white font-semibold py-3 rounded-xl uppercase !important;
+  }
+
+  .topbar {
+    @apply sticky top-0 z-40 w-full px-5 py-3 flex justify-between items-center bg-glassmorphism backdrop-blur-xl;
+  }
+
+  .bottombar {
+    @apply lg:hidden sticky bottom-0 z-10 w-full py-4 px-5  flex bg-glassmorphism backdrop-blur-xl rounded-t-xl;
+  }
+
+  .bottombar-container {
+    @apply relative w-full flex justify-between items-center;
+  }
+
+  .bottombar-link {
+    @apply p-2 flex items-center gap-2 rounded-lg;
+  }
+
+  .account-form_image-label {
+    @apply flex h-28 w-28 items-center justify-center rounded-full  !important;
+  }
+
+  .account-form_image-input {
+    @apply cursor-pointer border-none bg-transparent outline-none file:text-blue-600  !important;
+  }
+}
+
+@layer utilities {
+  .no-focus {
+    @apply focus-visible:ring-0 focus-visible:ring-transparent focus-visible:ring-offset-0 !important;
+  }
+}
