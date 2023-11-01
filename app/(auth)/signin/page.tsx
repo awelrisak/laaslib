@@ -77,7 +77,7 @@ export default function SignIn() {
        <SignInWithGoogle />
        <SignInWithFacebook />
      
-     </section> */}
+     </section>
      
      <div
        className="mb-9 flex items-center gap-2"
@@ -93,7 +93,7 @@ export default function SignIn() {
        <div 
          className="h-[1px] bg-neutral-700 flex-1"
        />
-     </div>
+     </div> */}
      
      <LogInForm />
       

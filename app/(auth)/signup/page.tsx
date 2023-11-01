@@ -78,7 +78,7 @@ export default function Signup() {
        <SignInWithGoogle />
        <SignInWithFacebook />
      
-     </section> */}
+     </section> 
      
      <div
        className="mb-11 flex items-center gap-2"
@@ -94,7 +94,7 @@ export default function Signup() {
        <div 
          className="h-[1px] bg-neutral-700 flex-1"
        />
-     </div>
+     </div> */}
      
      <SignUpForm />
      
