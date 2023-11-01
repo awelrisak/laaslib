@@ -48,7 +48,7 @@ export default function Signup() {
       </p>
       <Link
       href="/signin"
-      className="text-white font-[450] text-[13px] font-normal flex items-center gap-1"
+      className="text-white text-[13px] font-normal flex items-center gap-1"
     >
      Sign in    
      <ArrowRightIcon />

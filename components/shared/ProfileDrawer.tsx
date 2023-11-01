@@ -13,7 +13,7 @@ import MoreHorizontalIcon from "@/components/icons/MoreHorizontal"
 
 interface Props {
   isOpen: boolean;
-  setIsOpen: () => void,
+  setIsOpen: (state: boolean) => void,
   user: any,
 }
 
